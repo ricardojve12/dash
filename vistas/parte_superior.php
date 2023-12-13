@@ -1,3 +1,32 @@
+<?php
+/*
+$message = "";
+$usuario = "$";
+if ($_POST) {
+    $usuario = $_POST['usuario'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT id, password, nombre, tipo_usuario FROM usuario WHERE usuario = '$usuario'";
+    $result = mysqli_query($usuario, $sql);
+    $num = $result->num_rows;
+    if ($num > 0) {
+        $row = $result->fetch_assoc();
+
+        $pass_c = sha1($password);
+
+        if (password_verify($pass_c, $row["password"])) {
+
+            $_SESSION["id"] = $row["id"];
+            $_SESSION["nombre"] = $row["nombre"];
+            $_SESSION["password"] = $row["password"];
+            $_SESSION["tipo_usuario"] = $row["tipo_usuario"];
+        }
+    } else {
+        echo "<h1>NO EXISTE EL USUARIO</h1>";
+    }
+}*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -266,8 +295,9 @@
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">admin richard</span>
+
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
